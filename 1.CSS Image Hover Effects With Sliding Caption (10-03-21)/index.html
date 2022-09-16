@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>1.Sliding Caption</title>
+  <style type="text/css">
+  	body{ font-family: arial,helvetica; }
+  	h1{ text-align: center;line-height: 45px; }
+  	h1 span{color: #e01e48; }
+    .box1{
+      border: 2px solid #000;
+      width: 400px;
+      margin: 10px auto;
+      position: relative;;
+      overflow: hidden;
+    }
+    .box1 img{
+      width: 100%;
+      height: auto;
+
+      display: block;
+    }
+    .content1{
+      color: #fff;
+      background: rgba(0,0,0,.8);
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: all 0.5s;
+    }
+    .box1:hover .content1{
+      left: 0;
+    }
+    .content1 p{
+      border-top:1px solid white ;
+      border-bottom:1px solid white ;
+      padding: 20px 0;
+    }
+  </style>
+  <style>
+    .box2{
+      border: 2px solid #000;
+      width: 400px;
+      margin: 10px auto;
+      position: relative;;
+      overflow: hidden;
+    }
+    .box2 img{
+      width: 100%;
+      height: auto;
+
+      display: block;
+    }
+    .content2{
+      color: #fff;
+      background: rgba(0,0,0,.8);
+      position: absolute;
+      top: -100%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: all 0.5s;
+    }
+    .box2:hover .content2{
+      top: 0;
+    }
+    .content2 p{
+      border-top:1px solid white ;
+      border-bottom:1px solid white ;
+      padding: 20px 0;
+    }
+  </style>
+  <style>
+    .box3{
+      border: 2px solid #000;
+      width: 400px;
+      margin: 10px auto;
+      position: relative;;
+      overflow: hidden;
+    }
+    .box3 img{
+      width: 100%;
+      height: auto;
+
+      display: block;
+    }
+    .content3{
+      color: #fff;
+      background: rgba(0,0,0,.8);
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: all 0.5s;
+    }
+    .box3:hover .content3{
+      left: 0;
+    }
+    .content3 p{
+      border-top:1px solid white ;
+      border-bottom:1px solid white ;
+      padding: 20px 0;
+    }
+  </style>
+  <style>
+    .box4{
+      border: 2px solid #000;
+      width: 400px;
+      margin: 10px auto;
+      position: relative;;
+      overflow: hidden;
+    }
+    .box4 img{
+      width: 100%;
+      height: auto;
+
+      display: block;
+    }
+    .content4{
+      color: #fff;
+      background: rgba(0,0,0,.8);
+      position: absolute;
+      top: 100%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: all 0.5s;
+    }
+    .box4:hover .content4{
+      top: 0;
+    }
+    .content4 p{
+      border-top:1px solid white ;
+      border-bottom:1px solid white ;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+	<h1><span>Yahoo Baba</span><br>1.Sliding Caption Hover Effect</h1>
+
+  <!-- left to right -->
+	<div class="box1">
+		<img src="images/flower.jpg" alt="">
+    <div class="content1">
+      <h3>Flower Rose</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos cupiditate quia ipsum alias aliquam porro rem illum dolorem quisquam repellat!</p>
+    </div>
+	</div>
+
+  <!-- top to bottom -->
+  <div class="box2">
+    <img src="images/flower.jpg" alt="">
+    <div class="content2">
+      <h3>Flower Rose</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos cupiditate quia ipsum alias aliquam porro rem illum dolorem quisquam repellat!</p>
+    </div>
+  </div>
+
+    <!-- right to left -->
+  <div class="box3">
+    <img src="images/flower.jpg" alt="">
+    <div class="content3">
+      <h3>Flower Rose</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos cupiditate quia ipsum alias aliquam porro rem illum dolorem quisquam repellat!</p>
+    </div>
+  </div>
+
+    <!-- bottom to top -->
+  <div class="box4">
+    <img src="images/flower.jpg" alt="">
+    <div class="content4">
+      <h3>Flower Rose</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos cupiditate quia ipsum alias aliquam porro rem illum dolorem quisquam repellat!</p>
+    </div>
+  </div>
+
+
+</body>
+</html>
