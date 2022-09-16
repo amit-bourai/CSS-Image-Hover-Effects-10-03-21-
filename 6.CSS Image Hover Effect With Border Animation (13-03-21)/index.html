@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>6.Border Animation</title>
+  <style>
+  body{ font-family: arial,helvetica;}
+  h1{ text-align:center;line-height: 45px;}
+  h1 span{
+    color: #E01E48;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  .box{
+    width: 300px;
+    margin: 10px auto;
+    box-shadow: 0 0 5px #bababa;
+    overflow: hidden;
+    position: relative;
+  }
+  .box:before,
+  .box:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.5s;
+  }
+  .box:before{
+    bottom: 5%;
+    left: 5%;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+  }
+  .box:after{
+    top: 4.5%;
+    right: 4.4%;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+  .box:hover:before,
+  .box:hover:after{
+    opacity: 1;
+    width: 90%;
+    height: 90%;
+  }
+  .box img{
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    display: block;
+    transition: all 0.5s;
+  }
+  .box:hover img{
+    transform: scale(1.05);
+  }
+  .box .box-content{
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+  }
+  .box .name,
+  .box .post{
+    display: block;
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+  }
+  .box .post,
+  .box:hover .name{
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .box:hover .post{
+    opacity: 1;
+  }
+  </style>
+</head>
+<body>
+  <h1><span>Yahoo Baba</span> <br> 6.Border Animation on Hover Effect</h1>
+
+  <div class="box">
+    <img src="images/girl.jpg" alt="">
+    <div class="box-content">
+      <h3 class="name">Kristina</h3>
+      <span class="post">Web Designer</span>
+    </div>
+  </div>
+
+</body>
+</html>
