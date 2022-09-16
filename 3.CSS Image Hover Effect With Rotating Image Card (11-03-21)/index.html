@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>3.Rotating Image Card</title>
+  <style type="text/css">
+    body{ font-family:arial,helvetica;overflow: hidden; }
+    h1{ text-align: center;line-height: 45px}
+    h1 span{
+      color: #E01E48;
+    }
+    .box{
+      width: 390px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .box .box-pic{
+      position: relative;
+      transform-origin: 95% 50% 0;
+      transition: all 0.5s;
+      z-index: 1;
+    }
+    .box .box-pic:after{
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 95%;
+      width: 8px;
+      height: 8px;
+      background: #000;
+      border-radius: 50%;
+    }
+    .box .box-pic img{
+      border-radius: 50%;
+    }
+    .box:hover .box-pic{
+      transform: rotate(-140deg);
+
+    }
+    .box .box-content{
+      text-align: center;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 99%;
+      /*height: 99%;
+      height: 390px;*/ border: 6px solid #000;
+      background: brown;
+      border-radius: 50%;
+      padding: 70px 20px;
+      box-sizing: border-box;
+    }
+</style>
+</head>
+<body>
+  <h1><span>Yahoo Baba</span> <br> 3.Rotating Card Effect</h1>
+
+  <div class="box">
+    <div class="box-pic">
+      <img src="images/webdesigner.jpg" alt="">
+    </div>
+    <div class="box-content">
+      <h3>Web Designer</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit eius officiis dolor soluta minima minus blanditiis omnis illo, expedita laboriosam?</p>
+    </div>
+  </div>
+
+</body>
+</html>
